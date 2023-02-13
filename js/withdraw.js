@@ -21,14 +21,12 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     const oldWithdrawamountString = oldWithdrawamountElement.innerText;
     const oldWithdrawamount = parseFloat(oldWithdrawamountString);
 
-    const totalWithdrawAmount = oldWithdrawamount + newWithdrawAmount;
-    oldWithdrawamountElement.innerText=totalWithdrawAmount
-
-
-
-
+    
+    
+    
+    
     // Total Balance Section
-
+    
     const oldTotalBalanceElement = document.getElementById('balance-total');
     const oldTotalBalanceString = oldTotalBalanceElement.innerText;
     const oldTotalBalance = parseFloat(oldTotalBalanceString)
@@ -37,6 +35,10 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
         alert('Your Balance insufficient')
         return;
     }
+    
+    
+    const totalWithdrawAmount = oldWithdrawamount + newWithdrawAmount;
+    oldWithdrawamountElement.innerText=totalWithdrawAmount
 
 
 
